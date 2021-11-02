@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>pokemon</title>
+    <title>POKEMON</title>
     <link rel="stylesheet" href="style.css">
-   
+    <link rel="icon" href="assets/icon.png">
 </head>
 
 <body>
@@ -12,25 +12,45 @@
         <button id="auto">
             auto
         </button>
+        <ul>
+            <li>
+                <input type="checkbox" id="bulbasaur-select">
+                <label for="bulbasaur-select">BULBASAUR</label>
+            </li>
+            <li>
+                <input type="checkbox" id="charmander-select">
+                <label for="charmander-select">CHARMANDER</label> 
+            </li>
+            <li>
+                <input type="checkbox" id="squirtle-select">
+                <label for="squirtle-select">SQUIRTLE</label>
+            </li>
+        </ul>
         <div id="img-container">
-            <div id="bulbasaur">
-                <img  src="assets/001.png">
+            <div id="box">
+                <div class='switch' id="bulbasaur">
+                    <img  src="assets/001.png">
+                </div>
+                <button class='switch' id="bulbasaurbtn">
+                    evolve
+                </button>
             </div>
-            <button id="bulbasaurbtn">
-                evolve
-            </button>
-            <div  id="charmander">  
-                <img  src="assets/004.png">
+            <div id="box">
+                <div class='switch' id="charmander">  
+                    <img  src="assets/004.png">
+                </div>
+                <button class='switch' id="charmanderbtn">
+                    evolve
+                </button>
             </div>
-            <button id="charmanderbtn">
-                evolve
-            </button>
-            <div  id="squirtle">
-                <img  src="assets/007.png">
+            <div id="box"> 
+                <div  class='switch' id="squirtle">
+                    <img  src="assets/007.png">
+                </div>
+                <button class='switch' id="squirtlebtn">
+                    evolve
+                </button>
             </div>
-            <button id="squirtlebtn">
-                evolve
-            </button>
         </div>
         
         

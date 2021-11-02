@@ -18,19 +18,59 @@ Sbtn.addEventListener("click", Sevolve);
 let a = 1;
 let auto = document.getElementById("auto");
 auto.addEventListener('click', autoToggle);
-let vari
+let vari;
 
+let BSelect = document.getElementById("bulbasaur-select");
+BSelect.addEventListener('click',BToggle);
 
+let CSelect = document.getElementById("charmander-select");
+CSelect.addEventListener('click',CToggle);
+
+let SSelect = document.getElementById("squirtle-select");
+SSelect.addEventListener('click',SToggle);
+
+function BToggle() {
+    if (bulbasaur.style.display === "none") {
+        bulbasaur.style.display = "block";
+        Bbtn.style.display = "inline";
+    } else {
+        bulbasaur.style.display = "none";
+        Bbtn.style.display = "none";
+    }
+  }
+
+function CToggle() {
+    if (charmander.style.display === "none") {
+        charmander.style.display = "block";
+        Cbtn.style.display = "inline";
+    } else {
+        charmander.style.display = "none";
+        Cbtn.style.display = "none";
+    }
+  }
+
+function SToggle() {
+    if (squirtle.style.display === "none") {
+        squirtle.style.display = "block";
+        Sbtn.style.display = "inline";
+    } else {
+        squirtle.style.display = "none";
+        Sbtn.style.display = "none";
+    }
+  }
 
 function autoToggle(){
     if(a==3) {a=1}
+    
     if(a==1){ 
          vari = window.setInterval(function(){ 
-            Bevolve(); Cevolve(); Sevolve();}, 1000);
+        Bevolve(); Cevolve(); Sevolve();}, 1000);
+        auto.innerHTML = "cancle";
     }
     
     if(a==2){
     window.clearInterval(vari) ;
+    auto.innerHTML = "auto";
     }
     a++
      
