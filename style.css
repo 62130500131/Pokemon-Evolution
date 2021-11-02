@@ -45,11 +45,9 @@ button {
     border-radius: 20px;
 
 }
-img{
-    margin: 0;
-    padding: 0;
-    margin: auto;
-}
+
+
+    
 ul {
     display: flex;
     justify-content: center;
@@ -59,10 +57,5 @@ ul {
 ul li {
     list-style: none;
 }
-
-.img-container{
-    display: flex;
-    flex-direction: column;
-}
-
+    
 

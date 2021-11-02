@@ -15,7 +15,26 @@ let squirtle = document.getElementById("squirtle");
 let Sbtn = document.getElementById("squirtlebtn");
 let Scurrent = 1;
 Sbtn.addEventListener("click", Sevolve);
+let a = 1;
+let auto = document.getElementById("auto");
+auto.addEventListener('click', autoToggle);
+let vari
 
+
+
+function autoToggle(){
+    if(a==3) {a=1}
+    if(a==1){ 
+         vari = window.setInterval(function(){ 
+            Bevolve(); Cevolve(); Sevolve();}, 1000);
+    }
+    
+    if(a==2){
+    window.clearInterval(vari) ;
+    }
+    a++
+     
+}
 function Bevolve (){
     
     if(Bcurrent>2){
